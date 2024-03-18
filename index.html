@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="/Tuitionpayment.github.io/jQuery Latest/jquery-3.7.1.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <h2>Student</h2>
+
+<div id="mother-container">
+    <div id="data-container">
+        <label> Student ID: </label> <br />
+        <input type="number" id="stud_id" min="0" required /> <br />
+
+        <label> Last name: </label> <br />
+        <input type="text" id="lname" placeholder="Squarepants" required /> <br />
+
+        <label> First name: </label> <br />
+        <input type="text" id="fname" placeholder="Spongebob" required /> <br />
+
+        <label for="gender"> Gender: </label> <br />
+        <select id="gender">
+            <option value="0"> Male </option>
+            <option value="1"> Female</option>
+            <option value="2"> Non-Binary</option>
+        </select> <br />
+
+        <label for="cc"> Course code: </label> <br />
+        <input type="text" id="cc" required /> <br />
+
+        <label for="course"> Course: </label> <br />
+        <input type="number" id="course" min="0" max="8" required /> <br />
+
+        <label for="year"> Year: </label> <br />
+        <input type="number" id="year" min="0" required /> <br />
+
+        <label for="subjects"> Subjects: </label> <br />
+        <input type="number" id="subjects" min="1" required /> <br />
+
+        <br />
+        <input type="button" value="Submit" id="btnclck" /> <br />
+    </div>
+
+    <div id="display-container">
+        <table style="display: block">
+            <tr>
+                <th> Data </th>
+                <th> Price </th>
+            </tr>
+            <tr>
+                <td> Student ID </td>
+                <td id="disp_stud_id"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Last Name </td>
+                <td id="disp_lname"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Firsy Name </td>
+                <td id="disp_fname"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Gender </td>
+                <td id="disp_gender"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Course code </td>
+                <td id="disp_cc"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Year </td>
+                <td id="disp_year"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Subjects </td>
+                <td id="disp_subjects"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> -------------------- </td>
+                <td> -------------------- </td>
+
+            </tr>
+
+            <tr>
+                <td> Total Units </td>
+                <td id="units"> xx.xx</td>
+
+            </tr>
+
+            <tr>
+                <td> Tuition per Unit </td>
+                <td id="tpu"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Total Tuition</td>
+                <td id="tt"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Registration Fee </td>
+                <td id="rf"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Miscellaneous Fee </td>
+                <td id="mf"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td> Lab Fee </td>
+                <td id="lf"> xx.xx</td>
+            </tr>
+
+            <tr>
+                <td><b>Total Fee </b></td>
+                <td id="tf"> xx.xx</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="father-container">
+
+
+        <div id="flip-container"><p><b> MODE OF PAYMENT </b></p></div>
+        <div id="mop-container">Hello world!</div>
+
+
+        <div id="pay-container">
+            <h3> Pay here</h3> <br />
+
+            <table id="pay-cont">
+                <tr>
+                    <td>
+                        <label for="prelim"> Prelim Assesment </label>
+                        <input type="radio" id="prelim" name="ass" value="1" /> <br />
+                    </td>
+                    <td id="pa" class="pay"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="midterm"> Midterm Assesment </label>
+                        <input type="radio" id="midterm" name="ass" value="2" /> <br />
+
+                    </td>
+                    <td id="ma" class="pay"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="semi"> Semi-Final Assesment </label>
+                        <input type="radio" id="semi" name="ass" value="3" /> <br />
+
+                    </td>
+                    <td id="sfa" class="pay"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="final"> Final Assesment </label>
+                        <input type="radio" id="final" name="ass" value="4" /> <br />
+                    </td>
+                    <td id="fa" class="pay"></td>
+                </tr>
+
+            </table>
+            <br />
+
+            <label for="tendered"> Amount Tendered </label>
+            <input type="number" id="tendered" value="0" min="0" />
+
+            <br />
+            <br />
+
+            <input type="button" value="Save" id="btnclck2" />
+
+            <br /> <br />
+            <label id="label-change"><b>Change: </b><span id="change">0.00</span></label>
+            <br />
+            <label id="word-change"><b>Amount payable in Words: </b><span id="word"> </span></label>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="/Tuitionpayment.github.io/script.js"></script>
+    </body>
+</html>
